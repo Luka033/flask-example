@@ -5,5 +5,5 @@ application = Flask(__name__)
 
 @application.route('/')
 def hello_world():
-    mail_username = os.environ.get('MAIL_USERNAME')
-    return f'Here is my test environment variable: {mail_username}'
+    stage = os.environ.get('STAGE')
+    return f'Here is my test environment variable: {stage}'
